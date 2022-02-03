@@ -1,9 +1,14 @@
-function App() {
+import React from 'react';
+import Home from './components/Home';
+
+
+const App = () => {
   return (
-    <div className="App">
-      G Stores the place to be
-    </div>
-  );
-}
+  <div>
+    <Home/>
+  </div>
+  )
+};
 
 export default App;
+
