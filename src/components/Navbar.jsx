@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import Search from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {mobile} from '../responsive';
 
 const Container = styled.div`
     height: 60px;
+    ${mobile({backgroundolor:"red"})}
 `
 const Wrapper = styled.div`
     margin: 10px 20px;
@@ -72,7 +74,7 @@ const Navbar = () => {
                 <MenuItem>REGISTER</MenuItem>
                 <MenuItem>SIGN IN</MenuItem>
                 <MenuItem>
-                    <Badge badgeContent={5} color="primary">
+                    <Badge badgeContent={5} color="primary" >
                         <ShoppingCartIcon/>
                     </Badge>
                 </MenuItem>
